@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <script src="script.js"></script>
+    <script>
+        function DateNow() {
+            var now = new Date().getMonth(); //вывод месяца 
+            alert(now)
+        }
+    </script>
+</head>
+<body>
+    <button onclick="DateNow()">Показать год</button>
+    <button onclick="formuleUser()">Расчитать по формуле</button>
+    <script>
+        let n = 1
+        while((n+5)!=0) {
+            document.writeln("Березич Андрей");
+            n-=1
+        }
+
+        let arr = [1,-2,3,-4,5,6,-7]
+        let max = arr => arr.reduce((x, y) => Math.max(x, y));
+
+        if(max(arr) >= 0) {
+            document.writeln("Максимальный положительный элементв в массиве: " + max(arr))
+        } else {
+            document.writeln("В вашем массиве нет положительных элементов")
+        }
+
+    </script>
+</body>
+</html>

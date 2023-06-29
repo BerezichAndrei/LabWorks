@@ -1,0 +1,40 @@
+.pv {
+    color: #ffff;
+    font-family: ‘Raleway’,sans-serif; 
+    font-size: 62px; font-weight: 800; 
+    line-height: 72px; margin: 0 0 24px; 
+    text-align: center; 
+    text-transform: uppercase;
+}
+body {
+    background: #4985e6;
+    color: #ffff;
+    font-family: ‘Raleway’,sans-serif; 
+}
+.img {
+    box-shadow: -19px 0 22px -19px #000, 19px 0 22px -19px;
+    width: 330px;
+    height: 400px;
+    transition: 1s; /* Время эффекта */
+}
+.img:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */
+   }
+a.knopka {
+    color: #fff; /* цвет текста */
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    background: rgb(56, 183, 212); /* фон кнопки */
+    padding: .2em 2.4em; /* отступ от текста */
+    outline: none; /* убирать контур в Mozilla */
+  } 
+  a.knopka:hover { background: rgb(232,95,76); } /* при наведении курсора мышки */
+  a.knopka:active { background: rgb(152,15,0); } /* при нажатии */
+h2 {
+    color: #ffff;
+    font-family: ‘Raleway’,sans-serif; 
+    font-size: 32px; font-weight: 800; 
+    line-height: 72px; margin: 0 0 24px; 
+    text-transform: uppercase;
+}
+

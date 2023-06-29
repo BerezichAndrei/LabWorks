@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Партфолио</title>
+  </head>
+  <body>
+    <h1>Мое резюме</h1>
+    <img src="img/photome.jpg"  alt="Приветствую"   width="300"  height="300" >
+    <h1>Приветствую!</h1>
+    <p style="font-size: 15px; font-family: Times New Roman;"><i><b>Меня зовут Андрей.</b> <ins>Мне 17 лет,</ins> учусь я на 3 курсе, <del>в группе ПЗТ-34,</del> Гродненского государственного политехнического колледжа.</i></p>
+    <p><b>Мои увлечения</b></p>
+         <ul style="font-size: 14px; font-family: Times New Roman;text-align: match-parent; display: flex; flex-direction: column;">
+            <li>Игра в волейбол</li>
+            <li>Игра в танки</li>   
+            <li>Заниматься спортом</li>
+        </ul>
+    <p><b>Моя семья</b></p>
+         <ul style="font-size: 14px; font-family: Times New Roman;text-align: match-parent; display: flex; flex-direction: column;">
+            <li>Отец - Березич В.Н.</li>
+            <li>Мама - Березич Т.Н.</li>
+            <li>Братья - Березич А.В.</li>
+        </ul>
+      <div style="display: flex; flex-direction: row; justify-content: space-around;">
+        <div style="display: flex; flex-direction: column; align-items: center; font-family: 'Times New Roman';">
+            <h1>Мои любимые треки:</h1>
+            <p><i>bts-jump</i></p>
+            <audio src="music/1.mp3" controls>Cello Theme</audio>
+            <p> <i>pesnya-bam-bam-bam-my-strelyaem-po-hohlam</i></p>
+            <audio src="music/2.mp3" controls></audio>
+            <p><i>taeyang-jimin-bts-vibe</i></p>
+            <audio src="music/3.mp3" controls></audio>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; font-family: 'Times New Roman';">
+            <h1><i>Видео</i></h1>
+            <video width="640" height="360" src="video/2.mp4" controls>  </video> 
+            
+        </div>
+    </div>
+    
+    <div>
+      <table>
+        <colgroup>
+          <col span="2" style="background:rgb(255, 0, 242)"><!-- С помощью этой конструкции задаем цвет фона для первых двух столбцов таблицы-->
+          <col style="background-color:rgb(71, 185, 42)"><!-- Задаем цвет фона для следующего (одного) столбца таблицы-->
+        </colgroup>
+        <tr>
+          <th colspan="3">Для столбцов обьеденение</th>
+        
+        </tr>
+        <tr>
+          <td rowspan="3">обьеденение строк</td>
+          <td> ghbdtn </td>
+          <td>asdad </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>КС ГО</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>КС ГО</td>
+          </tr>
+          <tr>
+            <td>обьеденение строк</td>
+            <td>2</td>
+            <td>КС ГО</td>
+          </tr>
+      </table>
+      </div>
+      <form class="guruweba_example_form" name="feedback" method="POST" action="/feedback.php">
+      <h3>Обратная связь</h3>
+      <div class="guruweba_example_infofield">Тема обращения</div>
+      <select name="theme" required="required">
+        <option value="">Выберите вариант</option>
+        <option>Вопрос по работе страницы</option>
+        <option>Вопрос о какой-либо песне</option>
+        <option>Пожелания / предложения в улучшении страницы</option>
+      </select>
+      <div>Ваше имя</div>
+      <input type="text" name="name" required="required">
+      <div>Ваш email</div>
+      <input type="email" name="email" required="required">
+      <div>Сообщение</div>
+      <textarea name="message"></textarea>
+      <a href="#" class="knopka">Отправить</a>
+      <br>
+        <a href = "https://vk.com/tufudj" target="_blank">Связаться со мной</a><br>
+       
+        <a href="#top">Наверх</a>
+    </form>
+    <br>
+    <hr>
+    <form>
+      <p>Пожалуйста, выберите предпочитаемый вам способ связи:</p>
+      <div>
+        <input type="radio" id="contactChoice1"
+         name="contact" value="email">
+        <label for="contactChoice1">Email</label>
+    
+        <input type="radio" id="contactChoice2"
+         name="contact" value="phone">
+        <label for="contactChoice2">Phone</label>
+    
+        <input type="radio" id="contactChoice3"
+         name="contact" value="mail">
+        <label for="contactChoice3">Mail</label>
+      </div>
+      <div>
+        <button type="submit">Принять</button>
+      </div>
+      <hr>
+      <br>
+    </form>
+
+    <fieldset>
+      <legend>Кто укладывает плитку лучше:</legend>
+  
+      <div>
+        <input type="checkbox" id="scales" name="scales" checked>
+        <label for="scales">чурки</label>
+      </div>
+  
+      <div>
+        <input type="checkbox" id="horns" name="horns">
+        <label for="horns">хачи</label>
+        <br>
+        <a href="#" class="knopka">Отправить</a>
+      </div>
+  </fieldset>
+  <br>
+  </body>
+</html>

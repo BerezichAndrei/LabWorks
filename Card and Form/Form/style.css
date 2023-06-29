@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.wrapper__form {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(148, 18, 9);
+    border-radius: 10px;
+    box-shadow: inset 0 0 20px 15px rgba(0, 0, 0, 0.452);
+}
+
+.wrapBlock {
+    width: 550px;
+    margin: 10px;
+    min-height: 400px;
+}
+
+.inner__form {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 95%;
+    margin-left: 15px;
+}
+
+.form_text {
+    margin-top: 5px;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.form_text::after {
+    content: "";
+    display: block;
+    border-bottom: 1px dashed #000;
+}
+
+.form_text-litle {
+    font-style: italic;
+    font-size: 13px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.block__box {
+    margin-top: 10px;
+}
+
+.box_label {
+    font-size: 14px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.box_input {
+    width: 90%;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.815);
+}
+
+.box_input:focus {
+    outline: none;
+}
+
+.box_area {
+    resize: none;
+    border: none;
+    width: 100%;
+    height: 130px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.815);
+}
+
+.form_check {
+    outline: none;
+    border: none;
+    margin-right: 5px;
+}
+
+.form_check:focus {
+    outline: none;
+}
+
+.button_form {
+    cursor: pointer;
+    width: 150px;
+    margin-bottom: 10px;
+    background-color: #000;
+    margin-top: 15px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    margin-left: auto;
+    color: white;
+    box-shadow: 0 0 15px rgba(243, 3, 3, 0.815);
+    background: linear-gradient(to top, #000000 54%, #CFCFCF 100%);
+}
+
+
+.label_box {
+    margin-top: 10px;
+}
+
+@media screen and (max-width:300px) {
+    .box_input {
+        width: 100%;
+    }
+    .button_form {
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
